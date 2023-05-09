@@ -36,7 +36,7 @@ def about():
         message='Your application description page.'
     )
 
-@app.route('/textme', methods = ['POST'])
+@app.route('/textme', methods = ['GET', 'POST'])
 def textme():
     body = request.stream.readlines()
     print(type(body))
